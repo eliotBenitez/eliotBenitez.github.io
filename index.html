@@ -1,15 +1,46 @@
-<html>
-    <head>
-        <title>Тестовая страница</title>
-    </head>
-        <ol>
-            <li><a href="kubsu.ru/index.php" id="kubsu-main">Главная страница КубГУ</a></li>
-            <li><a href="https://kubsu.ru/index.php">Главная страница КубГУ (2)</a></li>
-        </ol>
-        <a href="https://kubsu.ru/index.php"><img src="utils/logo.png"></img></a>
-        <ol>
-            <li><a href="/about.html">Внутренняя</a></li>
-            <li><a href="#kubsu-main"></a></li>
-        </ol>
-    <body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Первая задача</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ol>
+        <li><a href="http://kubsu.ru/">Ссылка КубГУ</a></li>
+        <li><a href="https://kubsu.ru/">Ссылка КубГУ с протоколом "htpps"</a></li>
+        <li><a href="https://kubsu.ru/"><img src="images/logo.png" alt="КубГу"></a></li>
+        <li><a href="/page2.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+        <li><a href="./index.html">Ссылка на главную страницу</a></li>
+        <li><a href="#bottom">Фрагмент текущей страницы</a></li>
+        <li><a href="http://ya.ru/?product=socks&color=black&size=m">Ссылка с тремя параметрами (яндекс)</a></li>
+        <li> <a href="https://www.kubsu.ru/index.php/?id=section-content">Ссылка с параметром id</a></li>
+        <li><a href="./page2.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+        <li><a href="./about/about.html">Относительная ссылка на about</a></li>
+        <li><a href="./level1/level2/page3.html">Ссылка на два каталога ниже</a></li>
+        <li> <p>Мы все учимся в <a id="aInText" href="https://kubsu.ru/">КубГу</a></p></li>
+        <li> <a href="https://www.kubsu.ru/index.php/#section-content">Ссылка на секцию в стороннем сайте</a></li>
+        <li><p>map</p>
+        <li>
+            <div class="map_d">
+                <map name="имя" style="margin: 30px">
+                    <area href="https://kubsu.ru/" shape="poly" coords="0,0,0,0,0,0" alt="ссылка на квадратном объекте" class="map_h">
+                    <area href="https://kubsu.ru/" shape="circle" coords="0,0,0" alt="ссылка на круглом объекте" class="map_h">
+                </map>
+            </div>
+        </li>
+        <li> <a href="">Ссылка с пустым href'ом</a></li>
+        <li><a>Ссылка без href'a</a></li>
+        <li> <a href="https://kubsu.ru/" rel="nofollow">Ссылка по которой не будет следовать Яндекс</a></li>
+        <li><!--noindex--><a href="https://kubsu.ru/">Ссылка, которую не будет индексировать Яндекс</a><!--/noindex--></li>
+        <li><ol>
+            <li title="первый"><a href="page2.html">Ссылка в списке 1</a></li>
+            <li title="второй"><a href="./level1/level2/page3.html">ссылка в списке 2</a></li>
+            <li title="третий"><a href="./about/about.html">ссылка в списке 3</a></li>
+        </ol></li>
+        <li><a href="ftp://demo:demo@http://demo.wftpserver.com/main.html/download/Summer.jpg">ftp файл</a></li>
+        <li><a href="./components/form.html">Форма</a></li>
+    </ol>
+    <a id="bottom"></a>
+</body>
 </html>
