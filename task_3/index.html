@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <title>Задание №2</title>
+        <title>Задание №3</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            const sound = new Audio();
+            sound.src = "./amogus.mp3";
+        </script>
     </head>
     <body>
         <div class="stars"></div>
         <div class="twinkling"></div>
-        <header class="main_header">
-            <img class="headerS_logo" src="./images/logo.png" alt="logo" width="40px" height="40px" onmousedown="sound.play()">
-            <h4 class="headerS_name">Уроки WEB</h4>
-            <a href="./index.html"><button>Главная</button></a>
-            <nav class="headerS_right">
-                <a href="./page2.html"><button>Страница 2</button></a>
-                <a href="./about/about.html"><button>О нас</button></a>
-            </nav>
+        <header>
+            <div id="left">
+                <img id="logo" src="./images/logo.png" alt="logo" width="40px" height="40px" onmousedown="sound.play()">
+                <h4 id="name">Уроки WEB</h4>
+                <a href="./index.html"><button>Главная</button></a>
+            </div>
+            <div id="right">
+                <nav>
+                    <a href="./page2.html"><button>Страница 2</button></a>
+                    <a href="./about/about.html"><button>О нас</button></a>
+                </nav>
+            </div>
         </header>
         <div class="main_container">
             <ol>
@@ -143,12 +151,8 @@
         <div class="impostor">
             <img src="./images/impostor.png" alt="impostor" width="150px" height="150px">
         </div>
-        <footer class="main_footer">
+        <footer>
             <h4>© Сергей Синица</h4>
         </footer>
-        <script>
-            const sound = new Audio();
-            sound.src = "./amogus.mp3";
-        </script>
     </body>
 </html>
