@@ -104,8 +104,6 @@
     height: 150px;
 
     z-index: 100;
-    margin-left: auto;
-    margin-right: auto;
     
     animation-name: movingAmogusImg;
     animation-duration: 20s;
@@ -158,8 +156,6 @@
     height: 150px;
 
     z-index: 100;
-    margin-left: auto;
-    margin-right: auto;
 
     animation-name: movingImpostorImg;
     animation-duration: 20s;
