@@ -185,6 +185,13 @@ footer h4 {
         padding: 20px;
     }
 
+    header #left-aaa {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
     header #left {
         display: flex;
         align-items: center;
