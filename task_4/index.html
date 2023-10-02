@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Задача №4</title>
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script>
+            const sound = new Audio();
+            sound.src = "./amogus.mp3";
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    </head>
+    <body>
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <header>
+            <div class="container mx-auto mt-2 border border-white border-2 rounded-2" style="max-width: 960px; background: rgba(240, 113, 103, .6);">
+                <div class="row">
+                    <div class="col-12 col-md-4 d-flex justify-content-md-start justify-content-between align-items-center" id="header-left">
+                        <img src="./images/logo.png" alt="logo" width="40px" height="40px">
+                        <h4 class="mt-1 mx-2">Уроки WEB</h4>
+                    </div>
+                    <div class="col-12 col-md-8 d-flex justify-content-md-end flex-column justify-content-center align-items-center flex-md-row" id="header-right">
+                        <nav>
+                            <ul class="nav-wraper m-0 p-0">
+                                <li class="nav-item-wraper d-md-inline-block d-block m-3">
+                                    <a href=".././index.html" class="nav-link">главная</a>
+                                </li>
+                                <li class="nav-item-wraper d-md-inline-block d-block m-3">
+                                    <a href="./page2.html" class="nav-link">страница 2</a>
+                                </li>
+                                <li class="nav-item-wraper d-md-inline-block d-block m-3">
+                                    <a href="./about/about.html" class="nav-link">о нас</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 mx-auto d-flex flex-column justify-content-center align-items-center">
+                    <div class="container border border-3 border-secondary rounded-2 p-1 mb-2 mt-1 mx-auto d-flex justify-content-center flex-column" id="main_container">
+                        <div class="list-group list-group-numbered mx-auto">
+                            <a href="http://kubsu.ru" class="list-group-item list-group-item-action mb-2">Ссылка КубГУ</a>
+                            <a href="https://kubsu.ru" class="list-group-item list-group-item-action mb-2">Ссылка КубГУ</a>
+                            <a href="https://kubsu.ru" class="list-group-item list-group-item-action mb-2">
+                                <img src="./images/amogus.png" alt="" width="50px" height="50px">
+                            </a>
+                            <a href="./page2.html" class="list-group-item list-group-item-action mb-2">
+                                Сокращенная ссылка на внутреннюю страницу
+                            </a>
+                            <a href="./index.html" class="list-group-item list-group-item-action mb-2">
+                                Ссылка на главную страницу
+                            </a>
+                            <a href="#bottom" class="list-group-item list-group-item-action mb-2">Фрагмент текущей страницы</a>
+                            <a href="http://ya.ru/?product=socks&color=black&size=m"
+                               class="list-group-item list-group-item-action mb-2">
+                                Ссылка с тремя параметрами
+                            </a>
+                            <a href="https://www.kubsu.ru/index.php/?id=section-content"
+                               class="list-group-item list-group-item-action mb-2">
+                                Ссылка с параметром id
+                            </a>
+                            <a href="./page2.html" class="list-group-item list-group-item-action mb-2">
+                                Относительная ссылка на страницу в текущем каталоге
+                            </a>
+                            <a href="./about/about.html" class="list-group-item list-group-item-action mb-2">
+                                Относительная ссылка на about
+                            </a>
+                            <a href="./level1/level2/page3.html" class="list-group-item list-group-item-action mb-2">
+                                Ссылка на два каталога ниже
+                            </a>
+                            <p class="list-group-item mb-2">Википедия
+                                <a href="https://ru.wikipedia.org/wiki/Among_Us" class="list-group-item-action">Among Us</a>
+                            </p>
+                            <a href="https://www.kubsu.ru/index.php/#section-content"
+                               class="list-group-item list-group-item-action mb-2">
+                                Ссылка на секцию в стороннем сайте
+                            </a>
+                            <div class="list-group-item mb-2">
+                                <map name="mapL">
+                                    <area shape="rect" coords="0, 0, 20, 20"
+                                          href="https://ru.wikipedia.org/wiki/Among_Us" alt="ссылка">
+                                    <area shape="circle" coords="0, 0, 20, 20"
+                                          href="https://ru.wikipedia.org/wiki/Among_Us" alt="ссылка">
+                                </map>
+                                <img src="./images/impostor.png" usemap="#mapL" width="50px" height="50px" alt="Impostor">
+                            </div>
+                            <a href="" class="list-group-item mb-2 list-group-item-action">Ссылка с пустым href'ом</a>
+                            <a class="list-group-item mb-2">Ссылка без href'а</a>
+                            <a href="https://ru.wikipedia.org/wiki/Among_Us" class="list-group-item mb-2 list-group-item-action"
+                               rel="nofollow">
+                                Ссылка по которой не будет следовать Яндекс
+                            </a>
+                            <!--noindex--><a href="https://ru.wikipedia.org/wiki/Among_Us"
+                                             class="list-group-item mb-2 list-group-item-action">
+                                Ссылка, которую не будет индексировать Яндекс
+                            </a>
+                            <div class="p-1 bg-white bg-opacity-50 border border-1 rounded">
+                                <a href="./page2.html" class="list-group-item mb-1">Первая</a>
+                                <a href="./level1/level2/page3.html" class="list-group-item mb-1">Вторая</a>
+                                <a href="./about/about.html" class="list-group-item mb-1">Третья</a>
+                            </div>
+                            <a href="ftp://demo:demo@http://demo.wftpserver.com/main.html/download/Summer.jpg"
+                               class="list-group-item mt-1 mb-1">
+                                ftp файл
+                            </a>
+                        </div>
+                        <div class="mx-auto rounded-3 p-2 d-flex justify-content-center" id="form">
+                            <form>
+                                <div class="mb-1">
+                                    <label for="InputName" class="form-label">Логин</label>
+                                    <input type="text" class="form-control" id="InputName" placeholder="ФИО">
+                                </div>
+                                <div class="mb-1">
+                                    <label for="InputNumber" class="form-label">Номер телефона</label>
+                                    <input type="tel" class="form-control" id="InputNumber" placeholder="+71234567890">
+                                </div>
+                                <div class="mb-1">
+                                    <label for="InputMail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="InputMail" placeholder="email@example.com">
+                                </div>
+                                <div class="form-check form-check-inline mb-1 mx-2">
+                                    <input class="form-check-input" type="radio" id="radioMan">
+                                    <label class="form-check-label" for="radioMan">Мужской</label>
+                                </div>
+                                <div class="form-check form-check-inline mb-1 mx-2">
+                                    <input class="form-check-input" type="radio" id="radioFemale">
+                                    <label class="form-check-label" for="radioFemale">Женский</label>
+                                </div>
+                                <div class="mb-1">
+                                    <input type="date" class="form-control" id="InputDate">
+                                </div>
+                                <div class="mb-1">
+                                    <select class="form-select" list="dataOptions" id="dataList">
+                                        <option value="1">Pascal</option>
+                                        <option value="2">C</option>
+                                        <option value="3">C++</option>
+                                        <option value="4">JavaScript</option>
+                                        <option value="5">PHP</option>
+                                        <option value="6">Python</option>
+                                        <option value="7">Java</option>
+                                        <option value="8">Haskel</option>
+                                        <option value="9">Clojure</option>
+                                        <option value="10">Prolog</option>
+                                        <option value="11">Scala</option>
+                                    </select>
+                                </div>
+                                <div class="mb-1">
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                                <div class="mb-1">
+                                    <input type="checkbox" class="form-check-input" id="InputCheck">
+                                    <label class="form-check-label" for="InputCheck">
+                                        С контрактом ознакомлен(а).
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Сохранить</button>
+                            </form>
+                        </div>
+                        <div class="mx-auto mt-1 p-2 d-flex justify-content-center order-first" id="table">
+                            <table class="table table-bordered border-dark table-striped table-hove">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Колонка 1</th>
+                                    <th scope="col">Колонка 2</th>
+                                    <th scope="col">Колонка 3</th>
+                                    <th scope="col">Колонка 4</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Строка 1</th>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Строка 2</th>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Строка 3</th>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Строка 4</th>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Строка 5</th>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Строка 6</th>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                </tr>
+                                </tbody>
+                                <tfoot>
+                                <tr>
+                                    <th scope="row" colspan="2">Название</th>
+                                    <td colspan="2">Значение...</td>
+                                </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="amogus">
+            <img src="./images/amogus.png" id="amogus" width="150px" height="150px">
+        </div>
+        <div class="impostor">
+            <img src="./images/impostor.png" id="impostor" width="150px" height="150px">
+        </div>
+        <footer class="d-flex justify-content-between align-items-center" style="background: rgba(108,117,125, .6);" id="bottom">
+            <p class="text-white mt-3 mx-2">© Сергей Синица</p>
+        </footer>
+
+    </body>
+</html>

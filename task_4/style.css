@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Exo&family=Roboto&display=swap');
+
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.stars,
+.twinkling {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+}
+
+.stars {
+    background: #000 url(https://i.postimg.cc/hhFD7Nkf/apps-47636-13819498107583324-fb06b53a-4974-4acb-85e6-f6f363f85ab6-edec48d0-ec35-4a1f-8bf5-c455987b4a.png) repeat;
+    z-index: -2;
+
+}
+
+.twinkling {
+    background-image: url(https://i.postimg.cc/CLpNr4PF/twinkling.png);
+    animation: 3s twinkle infinite;
+    animation-timing-function: linear;
+    z-index: -2;
+}
+
+@keyframes twinkle {
+    from {
+        backrgound-position: 0
+    }
+
+    to {
+        background-position: -100px 0
+    }
+}
+
+#header-left h4 {
+    color: #fdfcdc;
+    font-size: medium;
+    font-family: 'Roboto', monospace;
+}
+
+#header-right a {
+    color: #fdfcdc;
+    font-family: 'Roboto', monospace;
+}
+
+#main_container {
+    height: max-content;
+    background: rgba(255, 255, 255, .8);
+}
+
+#main_container .list-group-item {
+    background: rgba(173, 181, 189, .85);
+    border: 2px solid rgb(108, 117, 125);
+    border-radius: 5px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#main_container #form {
+    background: rgba(255, 255, 255, .3);
+}
+
+.amogus {
+    position: absolute;
+    top: 250%;
+    left: 10%;
+
+    display: block;
+
+    animation-name: movingAmogus;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.amogus img {
+    z-index: 100;
+    margin-left: auto;
+    margin-right: auto;
+    
+    animation-name: movingAmogusImg;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes movingAmogus {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1500px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes movingAmogusImg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.impostor {
+    position: absolute;
+    left: 80%;
+    top: 20%;
+
+    display: block;
+
+    animation-name: movingImpostor;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.impostor img {
+    z-index: 100;
+    margin-left: auto;
+    margin-right: auto;
+
+    animation-name: movingImpostorImg;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes movingImpostor {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(+1200px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes movingImpostorImg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media all and (max-width: 900px){
+    .amogus {
+        display: none;
+    }
+
+    .impostor {
+        display: none;
+    }
+}
