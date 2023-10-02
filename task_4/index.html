@@ -10,7 +10,7 @@
             const sound = new Audio();
             sound.src = "./amogus.mp3";
         </script>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     </head>
     <body>
         <div class="stars"></div>
@@ -19,7 +19,7 @@
             <div class="container mx-auto mt-2 border border-white border-2 rounded-2" style="max-width: 960px; background: rgba(240, 113, 103, .6);">
                 <div class="row">
                     <div class="col-12 col-md-4 d-flex justify-content-md-start justify-content-between align-items-center" id="header-left">
-                        <img src="./images/logo.png" alt="logo" width="40px" height="40px">
+                        <img src="./images/logo.png" alt="logo" id="header-logo">
                         <h4 class="mt-1 mx-2">Уроки WEB</h4>
                     </div>
                     <div class="col-12 col-md-8 d-flex justify-content-md-end flex-column justify-content-center align-items-center flex-md-row" id="header-right">
@@ -48,7 +48,7 @@
                             <a href="http://kubsu.ru" class="list-group-item list-group-item-action mb-2">Ссылка КубГУ</a>
                             <a href="https://kubsu.ru" class="list-group-item list-group-item-action mb-2">Ссылка КубГУ</a>
                             <a href="https://kubsu.ru" class="list-group-item list-group-item-action mb-2">
-                                <img src="./images/amogus.png" alt="" width="50px" height="50px">
+                                <img src="./images/amogus.png" alt="amogus" id="amogus-kubsu">
                             </a>
                             <a href="./page2.html" class="list-group-item list-group-item-action mb-2">
                                 Сокращенная ссылка на внутреннюю страницу
@@ -88,7 +88,7 @@
                                     <area shape="circle" coords="0, 0, 20, 20"
                                           href="https://ru.wikipedia.org/wiki/Among_Us" alt="ссылка">
                                 </map>
-                                <img src="./images/impostor.png" usemap="#mapL" width="50px" height="50px" alt="Impostor">
+                                <img src="./images/impostor.png" usemap="#mapL" alt="Impostor" id="impostor-map">
                             </div>
                             <a href="" class="list-group-item mb-2 list-group-item-action">Ссылка с пустым href'ом</a>
                             <a class="list-group-item mb-2">Ссылка без href'а</a>
@@ -136,7 +136,7 @@
                                     <input type="date" class="form-control" id="InputDate">
                                 </div>
                                 <div class="mb-1">
-                                    <select class="form-select" list="dataOptions" id="dataList">
+                                    <select class="form-select">
                                         <option value="1">Pascal</option>
                                         <option value="2">C</option>
                                         <option value="3">C++</option>
@@ -223,10 +223,10 @@
             </div>
         </div>
         <div class="amogus">
-            <img src="./images/amogus.png" id="amogus" width="150px" height="150px">
+            <img src="./images/amogus.png" id="amogus">
         </div>
         <div class="impostor">
-            <img src="./images/impostor.png" id="impostor" width="150px" height="150px">
+            <img src="./images/impostor.png" id="impostor">
         </div>
         <footer class="d-flex justify-content-between align-items-center" style="background: rgba(108,117,125, .6);" id="bottom">
             <p class="text-white mt-3 mx-2">© Сергей Синица</p>
