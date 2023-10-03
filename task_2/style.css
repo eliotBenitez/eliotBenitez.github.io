@@ -47,11 +47,16 @@
     padding: 20px;
 }
 
-.main_header a button {
+.main_header button {
     border: none;
     background-color: rgba(240, 113, 103, .01);
     font-size: 16px;
     color: #fdfcdc;
+}
+
+.headerS_logo {
+    width: 40px;
+    height: 40px; 
 }
 
 .headerS_logo:hover {
@@ -103,6 +108,11 @@
 .main_container li li {
     width: auto;
     height: auto;
+}
+
+#amogus-kubsu {
+    width: 50px;
+    height: 50px;
 }
 
 .map_d {        
@@ -175,7 +185,10 @@
     animation-fill-mode: forwards;
 }
 
-.amogus img{
+.amogus img {
+    width: 150px;
+    height: 150px;
+
     z-index: 100;
     margin-left: auto;
     margin-right: auto;
@@ -224,7 +237,10 @@
     animation-fill-mode: forwards;
 }
 
-.impostor img{
+.impostor img {
+    width: 150px;
+    height: 150px;
+
     z-index: 100;
     margin-left: auto;
     margin-right: auto;

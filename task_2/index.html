@@ -6,24 +6,28 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <script>
+            const sound = new Audio();
+            sound.src = "./amogus.mp3";
+        </script>
     </head>
     <body>
         <div class="stars"></div>
         <div class="twinkling"></div>
         <header class="main_header">
-            <img class="headerS_logo" src="./images/logo.png" alt="logo" width="40px" height="40px" onmousedown="sound.play()">
+            <img class="headerS_logo" src="./images/logo.png" alt="logo" onmousedown="sound.play()">
             <h4 class="headerS_name">Уроки WEB</h4>
-            <a href="./index.html"><button>Главная</button></a>
+            <button onclick="location.href='./index.html'">Главная</button>
             <nav class="headerS_right">
-                <a href="./page2.html"><button>Страница 2</button></a>
-                <a href="./about/about.html"><button>О нас</button></a>
+                <button onclick="location.href='./page2'">Страница 2</button>
+                <button onclick="location.href='./about/about.html'">О нас</button>
             </nav>
         </header>
         <div class="main_container">
             <ol>
                 <li><a href="https://kubsu.ru">Ссылка КубГУ</a></li>
                 <li><a href="https://kubsu.ru">Ссылка КубГУ с протоколом https</a></li>
-                <li><a href="https://kubsu.ru"><img src="./images/amogus.png" alt="" width="50px" height="50px"></a></li>
+                <li><a href="https://kubsu.ru"><img src="./images/amogus.png" alt="amogus" id="amogus-kubsu"></a></li>
                 <li><a href="./page2.html">Сокращенная ссылка на внутреннюю страницу</a></li>
                 <li><a href="./index.html">Ссылка на главную страницу</a></li>
                 <li><a href="#bottom">Фрагмент текущей страницы</a></li>
@@ -54,100 +58,96 @@
                     </ol>
                 </li>
                 <li><a href="ftp://demo:demo@http://demo.wftpserver.com/main.html/download/Summer.jpg">ftp файл</a></li>
-                <form method="post" action="/" class="forms">
-                    <input class="fname" type="text" placeholder="ФИО">
-                    <input class="ftel" type="tel" placeholder="Номер телефона">
-                    <input class="fmail" type="email" placeholder="E-Mail">
-                    <input class="fdate" type="date">
-                    <div class="fradio">
-                        <input class="frman" type="radio" name="drone" id="fman">
-                        <label for="fman">Мужской</label>
-                        <input class="frfemale" type="radio" name="drone" id="ffemale">
-                        <label for="ffemale">Женский</label>
-                    </div>
-                    <select class="fselect">
-                        <option>Pascal</option>
-                        <option>C</option>
-                        <option>C++</option>
-                        <option>JavaScript</option>
-                        <option>PHP</option>
-                        <option>Python</option>
-                        <option>Java</option>
-                        <option>Haskel</option>
-                        <option>Clojure</option>
-                        <option>Prolog</option>
-                        <option>Scala</option>
-                    </select>
-                    <textarea class="farea" cols="20" rows="5"></textarea>
-                    <div class="fcheckbox">
-                        <input type="checkbox">
-                        <label for="fcheckbox">С контрактом ознакомлен(а).</label>
-                    </div>
-                    <input type="button" value="Сохранить">
-                </form>
-                <table class="main_table">
-                    <caption>Таблица</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Колонка 1</th>
-                            <th scope="col">Колонка 2</th>
-                            <th scope="col">Колонка 3</th>
-                            <th scope="col">Колонка 4</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Строка 1</th>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Строка 2</th>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Строка 3</th>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Строка 4</th>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Строка 5</th>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <th scope="row" colspan="2">Название</th>
-                            <td colspan="2">Значение...</td>
-                        </tr>
-                    </tfoot>
-                </table>
             </ol>
+            <form method="post" action="/" class="forms">
+                <input class="fname" type="text" placeholder="ФИО">
+                <input class="ftel" type="tel" placeholder="Номер телефона">
+                <input class="fmail" type="email" placeholder="E-Mail">
+                <input class="fdate" type="date">
+                <div class="fradio">
+                    <input class="frman" type="radio" name="drone" id="fman">
+                    <label for="fman">Мужской</label>
+                    <input class="frfemale" type="radio" name="drone" id="ffemale">
+                    <label for="ffemale">Женский</label>
+                </div>
+                <select class="fselect">
+                    <option>Pascal</option>
+                    <option>C</option>
+                    <option>C++</option>
+                    <option>JavaScript</option>
+                    <option>PHP</option>
+                    <option>Python</option>
+                    <option>Java</option>
+                    <option>Haskel</option>
+                    <option>Clojure</option>
+                    <option>Prolog</option>
+                    <option>Scala</option>
+                </select>
+                <textarea class="farea" cols="20" rows="5"></textarea>
+                <div class="fcheckbox">
+                    <input type="checkbox" id="chbox">
+                    <label for="chbox">С контрактом ознакомлен(а).</label>
+                </div>
+                <input type="button" value="Сохранить">
+            </form>
+            <table class="main_table">
+                <caption>Таблица</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Колонка 1</th>
+                        <th scope="col">Колонка 2</th>
+                        <th scope="col">Колонка 3</th>
+                        <th scope="col">Колонка 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Строка 1</th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Строка 2</th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Строка 3</th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Строка 4</th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Строка 5</th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="2">Название</th>
+                        <td colspan="2">Значение...</td>
+                    </tr>
+                </tfoot>
+            </table>
         </div>
         <div class="amogus">
-            <img src="images/amogus.png" alt="amogus" width="150px" height="150px">
+            <img src="images/amogus.png" alt="amogus">
         </div>
         <div class="impostor">
-            <img src="images/impostor.png" alt="impostor" width="150px" height="150px">
+            <img src="images/impostor.png" alt="impostor">
         </div>
         <footer class="main_footer">
             <h4>© Сергей Синица</h4>
         </footer>
-        <script>
-            const sound = new Audio();
-            sound.src = "./amogus.mp3";
-        </script>
     </body>
 </html>
