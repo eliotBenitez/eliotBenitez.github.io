@@ -22,8 +22,9 @@
     box-shadow: 4px 5px 5px rgba(0, 0, 0, .5);
 }
 
-.main_container a button {
+.main_container button {
     border: none;
     background-color: transparent;
     font-size: 20px;
+    margin-top: 2px;
 }
