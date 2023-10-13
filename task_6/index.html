@@ -20,11 +20,11 @@
                             <div class="mb-1">
                                 <label for="selectItem">Товар</label>
                                 <select class="form-select" name="selectItem" id="selectItem">
-                                    <option value="1">Мука (1 кг.)</option>
-                                    <option value="2">Сахар (1 кг.)</option>
-                                    <option value="3">Чай (50 шт.)</option>
-                                    <option value="4">Кофе (200 г.)</option>
-                                    <option value="5">Молоко (1 л.)</option>
+                                    <option value="120">Мука (1 кг.)</option>
+                                    <option value="64">Сахар (1 кг.)</option>
+                                    <option value="89">Чай (50 шт.)</option>
+                                    <option value="349">Кофе (200 г.)</option>
+                                    <option value="89">Молоко (1 л.)</option>
                                 </select>
                             </div>  
                             <div class="mb-3">
@@ -39,19 +39,32 @@
                     <div id="calculator-2" style="max-width: max-content;">
                         <form id="form-calc2" class="bg-light p-3 border border-1 rounded-4">
                             <div class="mb-2 border border-1 border-dark border-opacity-50 rounded-2">
-                                <input type="text" class="form-control" id="calc-screen" disabled>
+                                <input type="text" class="form-control" id="calc-display" disabled>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="radio1" id="radio1">
+                                <input class="form-check-input" type="radio" name="radioList" id="radio1" value="1">
                                 <label class="form-check-label" for="radio1">Чистка ноутбука</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="radio2" id="radio2">
+                                <input class="form-check-input" type="radio" name="radioList" id="radio2" value="2">
                                 <label class="form-check-label" for="radio2">Замена ОЗУ</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="radio3" id="radio3">
+                                <input class="form-check-input" type="radio" name="radioList" id="radio3" value="3">
                                 <label class="form-check-label" for="radio3">Установка ОС</label>
+                            </div>
+                            <select class="form-select" id="selectRAM" style="display: none;">
+                                <option value="1">8 ГБ</option>
+                                <option value="2">16 ГБ</option>
+                                <option value="3">32 ГБ</option>
+                            </select> 
+                            <div class="form-check" id='checkboxFull' style="display: none;">
+                                <input class="form-check-input" type="checkbox" name="checkFull" id="checkFull">
+                                <label class="form-check-label" for="checkFull">Минимальная установка</label>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputCount" class="form-label">Количество товара</label>
+                                <input type="text" class="form-control" id="countProducts" value="2">
                             </div>
                         </form>
                     </div>                    
