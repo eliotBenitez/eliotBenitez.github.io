@@ -30,13 +30,13 @@ function update() {
     switch (radio.value) {
         case "1":
             select.style.display = "none";
-            chbox.style.display = "none";
+            chbox_div.style.display = "none";
 
             display.value = prices['clear_laptop'] * parseInt(countProduct.value);
 
             break;
         case "2":
-            select.style.display = "flex";
+            select.style.display = "block";
             chbox_div.style.display = "none";
 
             display.value = prices['change_RAM'][parseInt(select.value)] * parseInt(countProduct.value);
@@ -44,7 +44,7 @@ function update() {
             break;
         case "3":
             select.style.display = "none";
-            chbox_div.style.display = "flex";
+            chbox_div.style.display = "block";
 
             if (chbox.checked) {
                 display.value = prices['change_os']['minimal'] * parseInt(countProduct.value);
