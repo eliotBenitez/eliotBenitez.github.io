@@ -7,5 +7,9 @@ function buttonClicked() {
     let count = document.getElementById('inputCount');
     let display = document.getElementById('calc-screen');
 
-    display.value = parseInt(product.value) * parseInt(count.value);
+    if (/^\d+$/.test(count.value)) {
+        display.value = parseInt(product.value) * parseInt(count.value);
+    } else {
+        alert("Для ввода нужно указывать числа!")
+    }
 };
