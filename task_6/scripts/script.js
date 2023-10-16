@@ -16,7 +16,11 @@ function buttonClicked() {
     let count = document.getElementById('inputCount');
     let display = document.getElementById('calc-screen');
 
-    display.value = parseInt(product.value) * parseInt(count.value);
+    if (/^\d+$/.test(count.value)) {
+        display.value = parseInt(product.value) * parseInt(count.value);
+    } else {
+        alert("Для ввода нужно указывать числа!")
+    }
 };
 
 function update() {
@@ -26,6 +30,11 @@ function update() {
     let chbox_div = document.getElementById('checkboxFull');
     let countProduct = document.getElementById('countProducts');
     let display = document.getElementById('calc-display');
+
+    if (!(/^\d+$/.test(countProduct.value))) {
+        alert("Укажите число!");
+        return; 
+    }
 
     switch (radio.value) {
         case "1":
