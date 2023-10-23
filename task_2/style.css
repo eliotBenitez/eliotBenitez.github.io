@@ -82,17 +82,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
     font-size: 20px;
     padding: 5px;
-}
-
-.main_container form, table {
-    position: relative;
-    left: 25%;
-    margin-top: 10px;
 }
 
 .main_container li {
@@ -136,6 +131,7 @@
     align-items: center;
     justify-content: center;
     font-size: 14px;
+    margin-top: 5px;
 }
 
 .forms input, select, textarea {
@@ -147,6 +143,7 @@
     table-layout: fixed;
     border: 2px solid rgb(108, 117, 125);
     border-radius: 5px;
+    margin-top: 5px;
     margin-bottom: 5px;
 }
 
@@ -174,7 +171,7 @@
 .amogus {
     position: absolute;
     left: 10%;
-    top: 220%;
+    top: 150%;
 
     animation-name: movingAmogus;
     animation-duration: 20s;
