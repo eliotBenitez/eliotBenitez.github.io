@@ -11,5 +11,9 @@ $('.slider').slick({
             slidesToScroll: 1
           }
         }
-      ]
-  });
+    ]
+});
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  console.log("DOM loaded and parsed");
+})
