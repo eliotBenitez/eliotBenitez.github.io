@@ -7,6 +7,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const number = document.getElementById('inputNumber');
     const organisation = document.getElementById('inputOrg');
     const message = document.getElementById('inputMessage');
+    const check = document.getElementById('checkBox');
     const btnSuccess = document.getElementById('btnSuccess');
     const formList = [
         [name, 'name'],
@@ -62,6 +63,11 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     btnSuccess.addEventListener('click', async (e) => {
+        if (!(check.checked)) {
+            alert("Вы не приняли политику конфиденциальности!");
+            return;
+        };
+
         e.preventDefault();
         
         history.back();
