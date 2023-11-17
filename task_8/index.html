@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 8</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="scripts/index.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="root h-100 d-flex flex-column justify-content-between">
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="navbar mx-5 border border-1 border-light rounded-3 navbar-dark bg-dark bg-opacity-50">
+        <div class="container-fluid justify-content-start">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" alt="Logo" id="navbarLogo">
+            </a>
+            <div class="navbar-nav">
+                <a class="nav-link active font-monospace" href=".././index.html">Главная</a>
+            </div> 
+            <div class="navbar-nav ms-auto d-flex flex-row">
+                <a class="nav-link active me-3" href="https://github.com/eliotBenitez/eliotBenitez.github.io">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                </a>
+                <a class="nav-link active me-2" href="https://kubsu.ru">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">  
+                        <image id="image0" width="16" height="16" x="0" y="0"
+                        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+                    AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABEVBMVEWpwtatw9GswdKrwtSs
+                    w9Wrwdasw9Pz8vfy8/Xv9Pjv8vnz9Pjw8/rx8vatwtPv8/zw8/ju7/Ts8ffp8PaswdTx8PXs8fVa
+                    hqlZg6lhjaqrwtLw9fnu8/d0l7UpX412mbXO2uiVscfv8vcwZpKfudDN1+GZs8pokbHx8flDdJ1d
+                    hajG0uCDp8GTr8dsk7Lr8PZXham6zdyvxdOatMuiuM+Srsbs7/ZWgqfW4OrW3uuVs81zmLMwZpTv
+                    8/ZUhqeww9SovdB9nLlYhqcvZZPx8vdJe6BvlrN2m7jq7fbu8/kwZpWJqcLu8fju8/YwZY/y8/jw
+                    9Pepw9Lv8vvv9Peqw9fx9Pvy8fby8vqtwtWrwNH///9EyIfDAAAAAWJLR0RaA7ulogAAAAd0SU1F
+                    B+cLERAjHZlpOLkAAAD4SURBVBjTDcvVFoJAFEDRKwOj9KhYiIWF3S0mdmHj//+InLVfD4CHQjTF
+                    YMxQNKI8ANjrYzleEEWB51ifF4PEyYTzB4LBgJ8jMieBQkgoHInGYtFIOESIAmpcSyRT6UwmnUom
+                    tLgKkqhnc/lCsVjI57K66C5GqVyp1ur1WrVSLhkKoEaz1e50e71up91qNhAo/cFwNJ5Mp5PxaDjo
+                    K4DN2XyxXK3Xq+ViPjMxIGuz3e0Px+Nhv9tuLASInLSzdbleL9ZZOxEElHGzWSIQF2vfDAruJvuw
+                    9acsP3X7wZp3eIm8Yb8/3+/nbRu8+AKH/jmMit1UxvnRzh+iySXBf39b7QAAACV0RVh0ZGF0ZTpj
+                    cmVhdGUAMjAyMy0xMS0xN1QxNTozNToyOSswMTowMG3UmXEAAAAldEVYdGRhdGU6bW9kaWZ5ADIw
+                    MjMtMTEtMTdUMTU6MzU6MjkrMDE6MDAciSHNAAAAAElFTkSuQmCC" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <main class="p-5 mt-auto mb-auto d-flex flex-column justify-content-center">
+        <div class="container-fluid mx-auto w-auto d-flex flex-column align-items-center">
+            <button class="btn btn-success" id="buttonForm">Открыть форму</button>
+        </div>
+        <div class="container w-auto bg-light bg-opacity-75 rounded-3 mx-auto justify-content-center" id="pop-up">
+            <form class="p-4 form-1" id="form">
+                <div class="mb-1">
+                    <label for="inputName" class="form-label">ФИО</label>
+                    <input type="text" id="inputName" class="form-control border-2 border-dark">
+                </div>
+                <div class="mb-1">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" id="inputEmail" class="form-control border-2 border-dark">
+                </div>
+                <div class="mb-1">
+                    <label for="inputNumber" class="form-label">Телефон</label>
+                    <input type="tel" id="inputNumber" class="form-control border-2 border-dark">
+                </div>
+                <div class="mb-1">
+                    <label for="inputOrg" class="form-label">Организация</label>
+                    <input type="text" id="inputOrg" class="form-control border-2 border-dark">
+                </div>
+                <div class="mb-1">
+                    <label for="inputMessage" class="form-label">Сообщение</label>
+                    <textarea class="form-control border-2 border-dark" id="inputMessage" cols="15" rows="5"></textarea>
+                </div>
+                <div class="mb-2 form-check">
+                    <input type="checkbox" class="form-check-input" id="checkBox">
+                    <label for="checkBox" class="form-check-label">
+                        Вы принимаете <a href="./files/Политика конфиденциальности.pdf">политику конфиденциальности</a>
+                    </label>
+                </div>
+                <button class="btn btn-success" id="btnSuccess">Отправить</button>
+            </form>
+        </div>
+    </main>
+    <div class="navbar navbar-dark bg-dark bg-opacity-75">
+        <div class="container-fluid">
+            <span class="navbar-brand mx-2">© Сергей Синица</span>
+        </div>
+    </div>
+</body>
+</html>
